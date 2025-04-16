@@ -1,0 +1,18 @@
+Checks: >
+  *,
+  -external-include,
+  -clang-analyzer-*,
+  -cppcoreguidelines-*,
+  -modernize-*,
+  -bugprone-*,
+  -readability-*,
+  -performance-*
+CheckOptions:
+  - key: cppcoreguidelines-avoid-magic-numbers.IgnoreMacros
+    value: "true"
+  - key: bugprone-unused-raii.ImplicitDestructors
+    value: "true"
+  - key: readability-braces-around-statements.Level
+    value: "warning"
+HeaderFilterRegex: '^.*'
+FormatStyle: 'file'

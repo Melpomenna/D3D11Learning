@@ -1,22 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Исходные файлы">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Файлы ресурсов">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{627f425a-bd76-4ded-a624-8b0d70b1d403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SystemLayer">
+      <UniqueIdentifier>{8fa40fc1-3cee-44fc-8af4-0cac665733b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SystemLayer\Windows">
+      <UniqueIdentifier>{43a97e98-89f1-40c2-a67a-8a083279e191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Runtime">
+      <UniqueIdentifier>{09788f80-9d68-4402-a7c4-ac4f5040bd5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tools">
+      <UniqueIdentifier>{5781272a-3361-4b71-b413-14d8a11200c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Engine">
+      <UniqueIdentifier>{eda06fc1-8c51-4960-bfd2-fb2be27dc684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Runtime\Memory">
+      <UniqueIdentifier>{6ad916a1-1242-4271-9805-3764285803d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\SystemLayer\Windows\WndClassImpl.cpp">
+      <Filter>src\SystemLayer\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SystemLayer\WndClass.cpp">
+      <Filter>src\SystemLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Application.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SystemLayer\WindowParams.cpp">
+      <Filter>src\SystemLayer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\stdafx.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Application.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SystemLayer\Windows\WndClassImpl.h">
+      <Filter>src\SystemLayer\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SystemLayer\WndClass.h">
+      <Filter>src\SystemLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SystemLayer\WindowParams.h">
+      <Filter>src\SystemLayer</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
